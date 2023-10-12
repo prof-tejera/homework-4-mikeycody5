@@ -1,0 +1,73 @@
+div {
+    box-sizing: border-box;
+}
+
+.Calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    border: 1px solid #aaa;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #10045f;
+}
+
+.Calculator *:focus {
+    outline: none;
+}
+
+.Screen {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.Number, .Operation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    font-size: 1.2em;
+    border-radius: 30px;
+    background-color: #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.Number:hover, .Operation:hover {
+    background-color: #ccc;
+}
+
+.Operations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Buttons {
+    display: flex;
+  }
+  
+  .NumberButtons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+  }
+  
+  .OperationButtons {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  
